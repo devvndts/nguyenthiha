@@ -28,7 +28,7 @@ $config['photo']['photo_static'][$nametype]['check'] = array("hienthi" => "Hiể
 $config['photo']['photo_static'][$nametype]['images'] = true;
 $config['photo']['photo_static'][$nametype]['width'] = 250;
 $config['photo']['photo_static'][$nametype]['height'] = 50;
-$config['photo']['photo_static'][$nametype]['thumb'] = '250x50x2';
+$config['photo']['photo_static'][$nametype]['thumb'] = '265x95x2';
 $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
 $config['photo']['photo_static'][$nametype]['css_hinh'] = '';//background:#000;padding:10px;
 
@@ -105,10 +105,10 @@ $config['photo']['man_photo'][$nametype]['check_all'] = false;
 $config['photo']['man_photo'][$nametype]['number_photo'] = 1;
 $config['photo']['man_photo'][$nametype]['images_photo'] = true;
 $config['photo']['man_photo'][$nametype]['avatar_photo'] = true;
-$config['photo']['man_photo'][$nametype]['link_photo'] = true;
+$config['photo']['man_photo'][$nametype]['link_photo'] = true; 
 $config['photo']['man_photo'][$nametype]['name_photo'] = true;
-$config['photo']['man_photo'][$nametype]['width_photo'] = 1366;
-$config['photo']['man_photo'][$nametype]['height_photo'] = 500;
+$config['photo']['man_photo'][$nametype]['width_photo'] = 1920;
+$config['photo']['man_photo'][$nametype]['height_photo'] = 680;
 $config['photo']['man_photo'][$nametype]['thumb_photo'] = '100x100x2';
 $config['photo']['man_photo'][$nametype]['notadd'] = '';//khongthemxoa
 $config['photo']['man_photo'][$nametype]['img_type_photo'] = '.jpg|.gif|.png|.jpeg|.gif';

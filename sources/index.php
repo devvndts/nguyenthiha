@@ -11,12 +11,23 @@ $slider = $cache->get("select name$lang, photo, link from #_photo where type = ?
 // $splistnb = $cache->get("select name$lang, slugvi, slugen, id from #_product_list where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb,id desc", array('san-pham'), 'result', 7200);
 
 $splistmenu = $cache->get("select name$lang, slugvi, slugen, id from #_product_list where type = ? and find_in_set('hienthi',status) order by numb,id desc", array('san-pham'), 'result', 7200);
+$libPhoto = $cache->get("select name$lang,photo from #_product where type = ? and find_in_set('hienthi',status) order by numb,id desc", array('thu-vien-anh'), 'result', 7200);
 
 $newsnb = $cache->get("select name$lang, slugvi, slugen, desc$lang, date_created, id, photo from #_news where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb,id desc", array('tin-tuc'), 'result', 7200);
+$whyChooseUs = $cache->get("select name$lang, slugvi, slugen, desc$lang, date_created, id from #_news where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb,id desc", array('tai-sao'), 'result', 7200);
+$reportCustomer = $cache->get("select name$lang, slugvi,photo, slugen, desc$lang, date_created, id from #_news where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb,id desc", array('y-kien'), 'result', 7200);
 
 $videonb = $cache->get("select id from #_photo where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status)", array('video'), 'result', 7200);
 
+$introduce = $d->rawQueryOne("select id, type, name$lang,desc$lang, content$lang, photo, date_created, date_updated, options from #_static where type = ? limit 0,1", array('gioi-thieu'));
+
 // $partner = $cache->get("select name$lang, link, photo from #_photo where type = ? and find_in_set('hienthi',status) order by numb, id desc", array('doitac'), 'result', 7200);
+
+
+$chuongtrinh = $cache->get("select name$lang, slugvi, slugen, desc$lang, date_created, id, photo from #_news_list where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb,id desc", array('chuong-trinh-hoc'), 'result', 7200);
+
+// dd($chuongtrinh);
+
 
 /* SEO */
 $seoDB = $seo->getOnDB(0, 'setting', 'update', 'setting');

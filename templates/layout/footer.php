@@ -12,11 +12,7 @@
                         <li class="w-clear"><i class="fas fa-envelope"></i><span></span><?=$optsetting['email']?></li>
                         <li class="w-clear"><i class="fas fa-globe"></i><span></span><?=$optsetting['website']?></li>
                     </ul><?php */ ?>
-                    <ul class="social social-footer">
-                    <?php for($i=0;$i<count($social);$i++) { ?>
-                        <li><a href="<?=$social[$i]['link']?>" target="_blank"><img src="<?=UPLOAD_PHOTO_L.$social[$i]['photo']?>" alt="<?=$social[$i]['name'.$lang]?>" width="40" height="40"></a></li>
-                    <?php } ?>
-                    </ul>
+                    
                 </div>
                 <div class="footer-news">
                     <h2 class="footer-title"><?= chinhsach ?></h2>
@@ -66,24 +62,14 @@
         </div>
     </div>
     */ ?>
+        <?= $addons->set('footer-map', 'footer-map', 6); ?>
     <div class="footer-powered">
         <div class="wrap-content">
             <div class="wap_copy">
-                <div class="footer-copyright">Bản quyền © TNX 2023. All Rights Reserved. Website design by <a href="https://vndts.vn/" target="_blank">VNDTS</a></div>
-                <div class="footer-statistic">
-                    <span><?= dangonline ?>: <?= $online ?></span>
-                    <span><?= homnay ?>: <?= $counter['today'] ?></span>
-                    <?php /*
-                    <span><?= homqua ?>: <?= $counter['yesterday'] ?></span>
-                    <span><?= trongtuan ?>: <?= $counter['week'] ?></span>
-                    <span><?= trongthang ?>: <?= $counter['month'] ?></span>
-                    */ ?>
-                    <span><?= tongtruycap ?>: <?= $counter['total'] ?></span>
-                </div>
+                <div class="footer-copyright">Bản quyền © Á CHÂU ACADEMY - 2023. DEVELOPED BY  <a href="https://vndts.vn/" target="_blank">VNDTS</a></div>
             </div>
         </div>
     </div>
-    <?= $addons->set('footer-map', 'footer-map', 6); ?>
     <?= $addons->set('messages-facebook', 'messages-facebook', 2); ?>
 </div>
 <?php if(LIKESITE) { ?>

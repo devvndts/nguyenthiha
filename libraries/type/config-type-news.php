@@ -32,6 +32,72 @@ $config['news'][$nametype]['height2'] = 55;
 $config['news'][$nametype]['thumb2'] = '55x55x2';
 $config['news'][$nametype]['css_hinh2'] = 'background:#000';//background:#000
 $config['news'][$nametype]['css_hinh'] = '';//background:#000;padding:3px;
+/* Tại sao chọn chúng tôi */
+$nametype = "tai-sao";
+$config['news'][$nametype]['title_main'] = "Tại sao chọn chúng tôi";
+$config['news'][$nametype]['dropdown'] = false;
+$config['news'][$nametype]['list'] = false;
+$config['news'][$nametype]['tags'] = false;
+$config['news'][$nametype]['view'] = true;
+$config['news'][$nametype]['copy'] = true;
+$config['news'][$nametype]['copy_image'] = true;
+$config['news'][$nametype]['comment'] = false;
+$config['news'][$nametype]['chucvu'] = false;
+$config['news'][$nametype]['slug'] = true;
+$config['news'][$nametype]['check'] = array("noibat" => "Nổi bật", "hienthi" => "Hiển thị");
+$config['news'][$nametype]['check_all'] = true;
+$config['news'][$nametype]['images'] = true;
+$config['news'][$nametype]['show_images'] = true;
+$config['news'][$nametype]['desc'] = true;
+$config['news'][$nametype]['content'] = true;
+$config['news'][$nametype]['content_cke'] = true;
+$config['news'][$nametype]['seo'] = true;
+$config['news'][$nametype]['schema'] = true;
+$config['news'][$nametype]['width'] = 270;
+$config['news'][$nametype]['height'] = 270;
+$config['news'][$nametype]['thumb'] = '100x100x1';
+$config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
+$config['news'][$nametype]['notadd'] = '';//khongthemxoa
+$config['news'][$nametype]['images2'] = false;
+$config['news'][$nametype]['show_images2'] = false; 
+$config['news'][$nametype]['width2'] = 55;
+$config['news'][$nametype]['height2'] = 55;
+$config['news'][$nametype]['thumb2'] = '55x55x2';
+$config['news'][$nametype]['css_hinh2'] = 'background:#000';//background:#000
+$config['news'][$nametype]['css_hinh'] = '';//background:#000;padding:3px;
+/* Ý kiến Phụ Huynh */
+$nametype = "y-kien";
+$config['news'][$nametype]['title_main'] = "Ý kiến Phụ Huynh";
+$config['news'][$nametype]['dropdown'] = false;
+$config['news'][$nametype]['list'] = false;
+$config['news'][$nametype]['tags'] = false;
+$config['news'][$nametype]['view'] = true;
+$config['news'][$nametype]['copy'] = true;
+$config['news'][$nametype]['copy_image'] = true;
+$config['news'][$nametype]['comment'] = false;
+$config['news'][$nametype]['chucvu'] = false;
+$config['news'][$nametype]['slug'] = true;
+$config['news'][$nametype]['check'] = array("noibat" => "Nổi bật", "hienthi" => "Hiển thị");
+$config['news'][$nametype]['check_all'] = true;
+$config['news'][$nametype]['images'] = true;
+$config['news'][$nametype]['show_images'] = true;
+$config['news'][$nametype]['desc'] = true;
+$config['news'][$nametype]['content'] = true;
+$config['news'][$nametype]['content_cke'] = true;
+$config['news'][$nametype]['seo'] = true;
+$config['news'][$nametype]['schema'] = true;
+$config['news'][$nametype]['width'] = 270;
+$config['news'][$nametype]['height'] = 270;
+$config['news'][$nametype]['thumb'] = '100x100x1';
+$config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
+$config['news'][$nametype]['notadd'] = '';//khongthemxoa
+$config['news'][$nametype]['images2'] = false;
+$config['news'][$nametype]['show_images2'] = false; 
+$config['news'][$nametype]['width2'] = 55;
+$config['news'][$nametype]['height2'] = 55;
+$config['news'][$nametype]['thumb2'] = '55x55x2';
+$config['news'][$nametype]['css_hinh2'] = 'background:#000';//background:#000
+$config['news'][$nametype]['css_hinh'] = '';//background:#000;padding:3px;
 
 /* Tuyển dụng */
 $nametype = "tuyen-dung";
@@ -146,9 +212,9 @@ if (isset($config['news'])) {
 
 
 
-/* Tin tức */
-/*$nametype = "tin-tuc";
-$config['news'][$nametype]['title_main'] = "Tin tức";
+/* Chương trình học */
+$nametype = "chuong-trinh-hoc";
+$config['news'][$nametype]['title_main'] = "Chương trình học";
 $config['news'][$nametype]['dropdown'] = true;
 $config['news'][$nametype]['list'] = true;
 $config['news'][$nametype]['cat'] = true;
@@ -165,7 +231,7 @@ $config['news'][$nametype]['images'] = true;
 $config['news'][$nametype]['show_images'] = true;
 $config['news'][$nametype]['gallery'] = array(
     $nametype => array(
-        "title_main_photo" => "Hình ảnh Tin tức",
+        "title_main_photo" => "Hình ảnh Chương trình học",
         "title_sub_photo" => "Hình ảnh",
         "check_photo" => array("hienthi" => "Hiển thị"),
         "number_photo" => 3,
@@ -178,7 +244,7 @@ $config['news'][$nametype]['gallery'] = array(
         "img_type_photo" => '.jpg|.gif|.png|.jpeg|.gif'
     ),
     "video" => array(
-        "title_main_photo" => "Video Tin tức",
+        "title_main_photo" => "Video Chương trình học",
         "title_sub_photo" => "Video",
         "check_photo" => array("hienthi" => "Hiển thị"),
         "number_photo" => 2,
@@ -186,7 +252,7 @@ $config['news'][$nametype]['gallery'] = array(
         "name_photo" => true
     ),
     "taptin" => array(
-        "title_main_photo" => "Tập tin Tin tức",
+        "title_main_photo" => "Tập tin Chương trình học",
         "title_sub_photo" => "Tập tin",
         "check_photo" => array("hienthi" => "Hiển thị"),
         "number_photo" => 2,
@@ -200,13 +266,13 @@ $config['news'][$nametype]['content'] = true;
 $config['news'][$nametype]['content_cke'] = true;
 $config['news'][$nametype]['seo'] = true;
 $config['news'][$nametype]['schema'] = true;
-$config['news'][$nametype]['width'] = 270;
-$config['news'][$nametype]['height'] = 270;
-$config['news'][$nametype]['thumb'] = '100x100x1';
-$config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';*/
+$config['news'][$nametype]['width'] = 440;
+$config['news'][$nametype]['height'] = 550;
+$config['news'][$nametype]['thumb'] = '440x550x1';
+$config['news'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
 
-/* Tin tức (List) */
-/*$config['news'][$nametype]['title_main_list'] = "Tin tức cấp 1";
+/* Chương trình học (List) */
+$config['news'][$nametype]['title_main_list'] = "Chương trình học cấp 1";
 $config['news'][$nametype]['images_list'] = true;
 $config['news'][$nametype]['show_images_list'] = true;
 $config['news'][$nametype]['slug_list'] = true;
@@ -214,7 +280,7 @@ $config['news'][$nametype]['check_list'] = array("noibat" => "Nổi bật", "hie
 $config['news'][$nametype]['check_all_list'] = true;
 $config['news'][$nametype]['gallery_list'] = array(
     $nametype => array(
-        "title_main_photo" => "Hình ảnh Tin tức cấp 1",
+        "title_main_photo" => "Hình ảnh Chương trình học cấp 1",
         "title_sub_photo" => "Hình ảnh",
         "check_photo" => array("hienthi" => "Hiển thị"),
         "number_photo" => 2,
@@ -227,7 +293,7 @@ $config['news'][$nametype]['gallery_list'] = array(
         "img_type_photo" => '.jpg|.gif|.png|.jpeg|.gif',
     ),
     "video" => array(
-        "title_main_photo" => "Video Tin tức cấp 1",
+        "title_main_photo" => "Video Chương trình học cấp 1",
         "title_sub_photo" => "Video",
         "check_photo" => array("hienthi" => "Hiển thị"),
         "number_photo" => 2,
@@ -243,10 +309,10 @@ $config['news'][$nametype]['seo_list'] = true;
 $config['news'][$nametype]['width_list'] = 320;
 $config['news'][$nametype]['height_list'] = 240;
 $config['news'][$nametype]['thumb_list'] = '100x100x1';
-$config['news'][$nametype]['img_type_list'] = '.jpg|.gif|.png|.jpeg|.gif';*/
+$config['news'][$nametype]['img_type_list'] = '.jpg|.gif|.png|.jpeg|.gif';
 
-/* Tin tức (Cat) */
-/*$config['news'][$nametype]['title_main_cat'] = "Tin tức cấp 2";
+/* Chương trình học (Cat) */
+$config['news'][$nametype]['title_main_cat'] = "Chương trình học cấp 2";
 $config['news'][$nametype]['images_cat'] = true;
 $config['news'][$nametype]['show_images_cat'] = true;
 $config['news'][$nametype]['slug_cat'] = true;
@@ -260,10 +326,10 @@ $config['news'][$nametype]['seo_cat'] = true;
 $config['news'][$nametype]['width_cat'] = 320;
 $config['news'][$nametype]['height_cat'] = 240;
 $config['news'][$nametype]['thumb_cat'] = '100x100x1';
-$config['news'][$nametype]['img_type_cat'] = '.jpg|.gif|.png|.jpeg|.gif';*/
+$config['news'][$nametype]['img_type_cat'] = '.jpg|.gif|.png|.jpeg|.gif';
 
-/* Tin tức (Item) */
-/*$config['news'][$nametype]['title_main_item'] = "Tin tức cấp 3";
+/* Chương trình học (Item) */
+$config['news'][$nametype]['title_main_item'] = "Chương trình học cấp 3";
 $config['news'][$nametype]['images_item'] = true;
 $config['news'][$nametype]['show_images_item'] = true;
 $config['news'][$nametype]['slug_item'] = true;
@@ -277,7 +343,7 @@ $config['news'][$nametype]['seo_item'] = true;
 $config['news'][$nametype]['width_item'] = 320;
 $config['news'][$nametype]['height_item'] = 240;
 $config['news'][$nametype]['thumb_item'] = '100x100x1';
-$config['news'][$nametype]['img_type_item'] = '.jpg|.gif|.png|.jpeg|.gif';*/
+$config['news'][$nametype]['img_type_item'] = '.jpg|.gif|.png|.jpeg|.gif';
 
 /* Tin tức (Sub) */
 /*$config['news'][$nametype]['title_main_sub'] = "Tin tức cấp 4";
